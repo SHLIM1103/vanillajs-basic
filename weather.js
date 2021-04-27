@@ -1,4 +1,4 @@
-const API_KEY = ""
+const API_KEY = "e655bd79b4689af46468d897a33949f2"
 const COORDS = "coords"
 
 function saveCoords(coordsObj) {
@@ -7,7 +7,7 @@ function saveCoords(coordsObj) {
 
 function handleGeoSuccess(position) {
   const latitude = position.coords.latitude
-  const longitude = prosition.coords.longitude
+  const longitude = position.coords.longitude
   const coordsObj = {
     latitude, longitude
   }
@@ -24,7 +24,7 @@ function askForCoords() {
 
 function loadCoords() {
   const loadedCoords = localStorage.getItem(COORDS)
-  if(loadedCoords === null) {
+  if (loadedCoords === null) {
     askForCoords()
   } else {
 
